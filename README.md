@@ -23,7 +23,7 @@ npm run dev
 npm run build && npm start
 ```
 
-Open http://localhost:3000 in your browser.
+Open mitthu.me in your browser.
 
 ## 🛠 Tech
 
