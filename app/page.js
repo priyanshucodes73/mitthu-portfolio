@@ -73,7 +73,7 @@ export default function Home() {
           >
             I'm Mitthu Kumar Bhagat, a full‑stack developer focused on creating
             interactive, accessible web experiences. Currently building the
-            Mantriva network of sites. and a gaming tournament website - AnPriX
+            Mantriva network of sites and a gaming tournament website - AnPriX
           </motion.p>
 
           <div className="mt-8 flex gap-4">

@@ -22,7 +22,7 @@ export default function AboutPage() {
         <div className="flex flex-col gap-4 w-full">
           <div className="space-y-4 text-slate-200">
             <p>
-              B.TechComputer Science student and aspiring Software Engineer
+              B.Tech Computer Science student and aspiring Software Engineer
               specializing in full-stack development, cloud computing, and
               software engineering. Experienced in building scalable web
               applications, REST APIs, and DevOps workflows (AWS, Docker,
