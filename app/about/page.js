@@ -10,11 +10,11 @@ import EducationSection from "@/components/EducationSection";
 export default function AboutPage() {
   return (
     <Section title="About Me" subtitle="A little snapshot of who I am.">
-      <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
+      <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center md:items-start w-full">
         <motion.img
           src="./cropped_circle_image.png"
           alt="Mitthu Kumar Bhagat avatar"
-          className="w-40 h-40 rounded-full border border-white/10 shadow-soft md:mr-8 mb-4 md:mb-0"
+          className="w-32 h-32 sm:w-40 sm:h-40 rounded-full border border-white/10 shadow-soft md:mr-8 mb-4 md:mb-0 object-cover"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
@@ -44,11 +44,11 @@ export default function AboutPage() {
         </div>
       </div>
       {/* Show skills section below social icons */}
-      <div className="w-full mt-10">
+      <div className="w-full mt-8 sm:mt-10">
         <SkillsSection />
       </div>
       {/* Show education section below skills */}
-      <div className="w-full mt-10">
+      <div className="w-full mt-8 sm:mt-10">
         <EducationSection />
       </div>
     </Section>

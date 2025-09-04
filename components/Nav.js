@@ -13,9 +13,9 @@ const links = [
 export default function Nav() {
   const pathname = usePathname();
   return (
-    <nav className="sticky top-0 z-50 backdrop-blur bg-black/20 border-b border-white/10">
-      <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-        <div className="flex items-center gap-4">
+    <nav className="sticky top-0 z-50 backdrop-blur bg-black/20 border-b border-white/10 w-full">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex flex-col sm:flex-row items-center justify-between w-full">
+        <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 w-full sm:w-auto">
           <a
             href="./Mitthu-Kumar-Bhagat.pdf"
             download
@@ -28,7 +28,7 @@ export default function Nav() {
             <span className="text-brand-300">.</span>
           </Link>
         </div>
-        <div className="flex items-center gap-1">
+        <div className="flex flex-wrap items-center gap-1 mt-2 sm:mt-0">
           {links.map((l) => (
             <Link
               key={l.href}

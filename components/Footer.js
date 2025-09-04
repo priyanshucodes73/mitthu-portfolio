@@ -1,16 +1,16 @@
 export default function Footer() {
   return (
-    <footer className="mt-16 border-t border-white/10">
-      <div className="max-w-5xl mx-auto px-6 py-10 text-sm text-slate-300 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <footer className="mt-16 border-t border-white/10 w-full">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 py-8 text-sm text-slate-300 flex flex-col sm:flex-row items-center justify-between gap-6 w-full">
         {/* Left Section */}
-        <p className="text-center sm:text-left">
+        <p className="text-center sm:text-left w-full sm:w-auto">
           © {new Date().getFullYear()}{" "}
           <span className="font-semibold">Mitthu Kumar Bhagat</span> 👦. All
           rights reserved.
         </p>
 
         {/* Middle Section: Contact Info */}
-        <div className="text-center">
+        <div className="text-center w-full sm:w-auto">
           📧{" "}
           <a
             href="mailto:priyanshubhagat7373@gmail.com"
@@ -26,7 +26,7 @@ export default function Footer() {
         </div>
 
         {/* Right Section */}
-        <div className="opacity-80 text-center sm:text-right">
+        <div className="opacity-80 text-center sm:text-right w-full sm:w-auto">
           🚀 Built with <span className="font-medium">Next.js</span> •{" "}
           <span className="font-medium">Tailwind</span> •{" "}
           <span className="font-medium">Framer Motion</span>

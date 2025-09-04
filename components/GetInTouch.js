@@ -33,20 +33,20 @@ const TextAreaField = ({ icon: Icon, placeholder, name }) => (
 );
 
 const GetInTouch = () => (
-  <section className="py-12 flex justify-center items-center">
-    <div className="bg-black/80 rounded-2xl shadow-lg p-8 w-full max-w-3xl flex flex-col md:flex-row gap-8">
+  <section className="py-8 sm:py-12 flex justify-center items-center w-full">
+    <div className="bg-black/80 rounded-2xl shadow-lg p-4 sm:p-8 w-full max-w-3xl flex flex-col md:flex-row gap-6 md:gap-8">
       {/* Left: Illustration */}
-      <div className="flex-1 flex justify-center items-center">
+      <div className="flex-1 flex justify-center items-center mb-6 md:mb-0">
         <img
           src="./Touch Me.gif"
           alt="Contact Illustration"
-          className="w-48 h-48 object-contain"
+          className="w-32 h-32 sm:w-48 sm:h-48 object-contain"
         />
       </div>
       {/* Right: Form */}
       {/* Replace with Formspree integration. Visit https://formspree.io/ to get your endpoint. Example below: */}
       <form
-        className="flex-1 flex flex-col justify-center"
+        className="flex-1 flex flex-col justify-center w-full"
         action="https://formspree.io/f/xnnbobgw"
         method="POST"
       >

@@ -5,7 +5,7 @@ import ProjectCard from "@/components/ProjectCard";
 export default function ProjectsPage() {
   return (
     <Section title="Projects" subtitle="Selected work and experiments.">
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 w-full px-2 sm:px-0">
         <ProjectCard
           title="Pig Game"
           description="A two-player dice game where players take turns rolling the dice, aiming to be the first to reach 100 points while avoiding the unlucky roll of 1."
