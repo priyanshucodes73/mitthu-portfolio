@@ -9,8 +9,8 @@ const educationData = [
   },
   {
     degree: "Higher Secondary Certificate in Science (PCM Group)",
-    institution: "Adarsh Sr. Sec School Chausa, Buxar | BSEB",
-    years: "2020-2022 | Completed",
+    institution: "Forbesganj College,Forbesganj | BSEB",
+    years: "2018-2020 | Completed",
     image: "./cropped_circle_image (1).png", // School image (same as college)
   },
 ];

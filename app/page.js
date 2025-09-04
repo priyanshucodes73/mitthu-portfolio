@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import AnimatedButton from "@/components/AnimatedButton";
 import Section from "@/components/Section";
 import ProjectCard from "@/components/ProjectCard";
+import GetInTouch from "@/components/GetInTouch";
 
 export default function Home() {
   // Animated role text: only role changes, prefix stays constant
@@ -116,6 +117,9 @@ export default function Home() {
           />
         </div>
       </Section>
+
+      {/* Get In Touch section below Writing */}
+      <GetInTouch />
 
       <Section
         title="Writing"

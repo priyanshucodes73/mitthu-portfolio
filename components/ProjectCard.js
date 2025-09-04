@@ -1,13 +1,18 @@
 "use client";
 import { motion } from "framer-motion";
 
-export default function ProjectCard({ title, description, tags = [], href = "#" }) {
+export default function ProjectCard({
+  title,
+  description,
+  tags = [],
+  href = "#",
+}) {
   return (
     <motion.a
       href={href}
       target="_blank"
       rel="noreferrer"
-      className="card p-6 block hover:shadow-lg hover:shadow-black/20 transition"
+      className="card p-6 block !bg-black rounded-xl hover:shadow-lg hover:shadow-black/20 transition"
       whileHover={{ y: -4 }}
     >
       <h3 className="text-xl font-bold">{title}</h3>
