@@ -5,13 +5,13 @@ const educationData = [
     degree: "Bachelor of Technology in Computer Science and Engineering",
     institution: "Budge Budge Institute of Technology, Kolkata, West Bengal",
     years: "2022-2026 | Pursuing",
-    image: "/cropped_circle_image.png", // College image
+    image: "./cropped_circle_image (2).png", // College image
   },
   {
     degree: "Higher Secondary Certificate in Science (PCM Group)",
     institution: "Adarsh Sr. Sec School Chausa, Buxar | BSEB",
     years: "2020-2022 | Completed",
-    image: "/cropped_circle_image.png", // School image (same as college)
+    image: "./cropped_circle_image (1).png", // School image (same as college)
   },
 ];
 
