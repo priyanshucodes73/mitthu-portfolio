@@ -2,6 +2,11 @@
 import { motion } from "framer-motion";
 import Section from "@/components/Section";
 
+import SocialIcons from "@/components/SocialIcons";
+
+import SkillsSection from "@/components/SkillsSection";
+import EducationSection from "@/components/EducationSection";
+
 export default function AboutPage() {
   return (
     <Section title="About Me" subtitle="A little snapshot of who I am.">
@@ -17,59 +22,34 @@ export default function AboutPage() {
         <div className="flex flex-col gap-4 w-full">
           <div className="space-y-4 text-slate-200">
             <p>
-              I'm Mitthu Kumar Bhagat, a full‑stack developer focused on
-              creating interactive, accessible web experiences. Currently
-              building the Mantriva network of sites. and a gaming tournament
-              website - AnPriX
+              B.TechComputer Science student and aspiring Software Engineer
+              specializing in full-stack development, cloud computing, and
+              software engineering. Experienced in building scalable web
+              applications, REST APIs, and DevOps workflows (AWS, Docker,
+              CI/CD). Strong background in Agile methodologies, version control
+              (Git/GitHub), and software testing. Co-founder of two startups and
+              contributor to official college R&D website with proven leadership
+              in project delivery
             </p>
             <p>
               Interested in AI automation, data engineering, and performance.
               Open to freelance and collaborations.
             </p>
           </div>
-          <div className="flex flex-wrap gap-3 mt-2">
-            <a
-              href="https://www.facebook.com/priyanshu7373"
-              target="_blank"
-              rel="noopener"
-              className="px-4 py-2 rounded-full bg-red-600 text-white font-semibold shadow hover:bg-red-700 transition"
-            >
-              Facebook
-            </a>
-            <a
-              href="https://www.instagram.com/mr.bhagat7373/?next=%2F"
-              target="_blank"
-              rel="noopener"
-              className="px-4 py-2 rounded-full bg-red-600 text-white font-semibold shadow hover:bg-red-700 transition"
-            >
-              Instagram
-            </a>
-            <a
-              href="https://wa.me/"
-              target="_blank"
-              rel="noopener"
-              className="px-4 py-2 rounded-full bg-red-600 text-white font-semibold shadow hover:bg-red-700 transition"
-            >
-              WhatsApp
-            </a>
-            <a
-              href="https://github.com/priyanshucodes73"
-              target="_blank"
-              rel="noopener"
-              className="px-4 py-2 rounded-full bg-red-600 text-white font-semibold shadow hover:bg-red-700 transition"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://www.linkedin.com/in/mitthu-kumar-bhagat73/"
-              target="_blank"
-              rel="noopener"
-              className="px-4 py-2 rounded-full bg-red-600 text-white font-semibold shadow hover:bg-red-700 transition"
-            >
-              LinkedIn
-            </a>
+          {/* Social media icons row */}
+          <div className="mt-2">
+            {/* Import SocialIcons component */}
+            <SocialIcons />
           </div>
         </div>
+      </div>
+      {/* Show skills section below social icons */}
+      <div className="w-full mt-10">
+        <SkillsSection />
+      </div>
+      {/* Show education section below skills */}
+      <div className="w-full mt-10">
+        <EducationSection />
       </div>
     </Section>
   );

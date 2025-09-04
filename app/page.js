@@ -1,10 +1,30 @@
 "use client";
+import React from "react";
 import { motion } from "framer-motion";
 import AnimatedButton from "@/components/AnimatedButton";
 import Section from "@/components/Section";
 import ProjectCard from "@/components/ProjectCard";
 
 export default function Home() {
+  // Animated role text: only role changes, prefix stays constant
+  const roles = [
+    { text: "Software Developer", color: "text-blue-400" },
+    { text: "Backend Developer", color: "text-green-400" },
+    { text: "Frontend Developer", color: "text-purple-400" },
+  ];
+  const [currentRole, setCurrentRole] = React.useState(0);
+  const [visible, setVisible] = React.useState(true);
+
+  React.useEffect(() => {
+    const fadeTimeout = setTimeout(() => {
+      setVisible(false);
+      setTimeout(() => {
+        setCurrentRole((prev) => (prev + 1) % roles.length);
+        setVisible(true);
+      }, 400); // fade out duration
+    }, 2000);
+    return () => clearTimeout(fadeTimeout);
+  }, [currentRole]);
   return (
     <>
       <header className="relative overflow-hidden">
@@ -30,20 +50,29 @@ export default function Home() {
             Hey, I'm <span className="text-brand-300">Mitthu Kumar Bhagat</span>{" "}
             👋
           </motion.h1>
+          {/* Animated role text below name, left aligned */}
+          <div className="h-10 mt-2 flex items-center">
+            <span className="text-2xl font-bold transition-colors duration-400">
+              I'm a{" "}
+              <span
+                className={`transition-opacity duration-400 ${
+                  roles[currentRole].color
+                } ${visible ? "opacity-100" : "opacity-0"}`}
+              >
+                {roles[currentRole].text}
+              </span>
+            </span>
+          </div>
+          {/* ...existing code... */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1, duration: 0.6 }}
             className="mt-4 text-lg md:text-xl text-slate-200/90 max-w-2xl"
           >
-            B.TechComputer Science student and aspiring Software Engineer
-            specializing in full-stack development, cloud computing, and
-            software engineering. Experienced in building scalable web
-            applications, REST APIs, and DevOps workflows (AWS, Docker, CI/CD).
-            Strong background in Agile methodologies, version control
-            (Git/GitHub), and software testing. Co-founder of two startups and
-            contributor to official college R&D website with proven leadership
-            in project delivery
+            I'm Mitthu Kumar Bhagat, a full‑stack developer focused on creating
+            interactive, accessible web experiences. Currently building the
+            Mantriva network of sites. and a gaming tournament website - AnPriX
           </motion.p>
 
           <div className="mt-8 flex gap-4">
