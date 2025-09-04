@@ -23,10 +23,14 @@ export default function Nav() {
           >
             Download Resume
           </a>
-          <Link href="/" className="font-extrabold tracking-tight text-xl">
+          <button
+            type="button"
+            className="font-extrabold tracking-tight text-xl focus:outline-none"
+            onClick={() => window.location.reload()}
+          >
             Mitthu Kumar Bhagat - Protfolio
             <span className="text-brand-300">.</span>
-          </Link>
+          </button>
         </div>
         <div className="flex flex-wrap items-center gap-1 mt-2 sm:mt-0">
           {links.map((l) => (
